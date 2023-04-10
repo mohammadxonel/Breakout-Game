@@ -5,32 +5,32 @@
     border: solid 1px black;
     margin-top: 100px;
 
-}
+ }
 
-.user {
+ .user {
 
     position: absolute;
     width: 100px;
     height: 20px;
     background-color: blue;
 
-}
+ }
 
-.block {
+ .block {
 
     position: absolute;
     width: 100px;
     height: 20px;
     background-color: blueviolet;
 
-}
+ }
 
-.ball {
+ .ball {
 
     position: absolute;
     width: 20px;
     height: 20px;
     border-radius: 10px;
     background-color: red;
-    
-}
+
+ }

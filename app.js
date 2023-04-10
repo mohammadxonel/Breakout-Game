@@ -46,28 +46,34 @@ const blocks = [
     new Block(230, 210),
     new Block(340, 210),
     new Block(450, 210),
-  ]
+]
 
-  // draw the blocks //
+// draw the blocks //
 
-  function addBlocks() {
+function addBlocks() {
     for (let i = 0; i < blocks.length; i++) {
-      const block = document.createElement('div')
-      block.classList.add('block')
-      block.style.left = blocks[i].bottomLeft[0] + 'px'  
-      block.style.bottom = blocks[i].bottomLeft[1] + 'px'  
-      grid.appendChild(block)
-      console.log(blocks[i].bottomLeft)
+        const block = document.createElement('div')
+        block.classList.add('block')
+        block.style.left = blocks[i].bottomLeft[0] + 'px'
+        block.style.bottom = blocks[i].bottomLeft[1] + 'px'
+        grid.appendChild(block)
+        console.log(blocks[i].bottomLeft)
     }
-  }
+}
 
-  addBlocks()
+addBlocks()
 
-  // The user //
+// The user //
 
-  const user = document.createElement('div')
-  user.classList.add('user')
-  grid.appendChild(user)
-  drawUser()
+const user = document.createElement('div')
+user.classList.add('user')
+grid.appendChild(user)
+drawUser()
 
-  
+
+// The ball //
+
+const ball = document.createElement('div')
+ball.classList.add('ball')
+grid.appendChild(ball)
+drawBall()
