@@ -17,3 +17,14 @@ let ballCurrentPosition = ballStart
 let timerId
 let score = 0
 
+// the block //
+
+class block {
+    constructor(xAxis, yAxis) {
+        this.bottomLeft = [xAxis, yAxis]
+        this.bottomRight = [xAxis + blockWidth, yAxis]
+        this.topRight = [xAxis, blockWidth, yAxis + blockHeight]
+        this.topLeft = [xAxis, yAxis + blockHeight]
+    }
+}
+
