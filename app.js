@@ -110,3 +110,10 @@ function drawUser () {
 
 }
 
+// draw Ball //
+
+function drawBall() {
+    ball.style.left = ballCurrentPosition[0] + 'px'
+    ball.style.bottom = ballCurrentPosition[1] + 'px'   
+}
+
