@@ -117,3 +117,13 @@ function drawBall() {
     ball.style.bottom = ballCurrentPosition[1] + 'px'   
 }
 
+// move Ball //
+
+function moveBall() {
+    ballCurrentPosition[0] += xDirection
+    ballCurrentPosition[1] += yDirection
+    drawBall()
+    checkForCollisions()
+}
+timerId = setInterval(moveBall, 30)
+
